@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/cropped-Strong-3-1.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-light navbar-expand-lg bg-light sticky-top">
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <img
+            src="./images/cropped-Strong-3-1.png"
+            width="100"
+            height="auto"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact.html" class="nav-link active"> Contact Us </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO -->
+    <div class="jumbotron jcf"></div>
+    <div class="card contact-card">
+      <div class="card-body contact-cb">
+        <p>
+          Get in Touch,<br />
+          we'll make yyou a Beliver. "We're here to help". Fill out the form and
+          we'll get bact to you as soon as possible.
+        </p>
+      </div>
+    </div>
+    <h2 class="text-center c-h2">Contact us</h2>
+    <h6 class="text-center c-h6">
+      our team would be happy to all your questions.
+    </h6>
+    <div class="container c-form my-4">
+      <form action="/">
+        <label for="fname">First Name<sup class="req">*</sup></label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name"
+        />
+
+        <label for="lname">Last Name<sup class="req">*</sup></label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name"
+        />
+
+        <label for="lname">Email-id<sup class="req">*</sup></label>
+        <input
+          type="email"
+          id="email"
+          name="emailid"
+          placeholder="Your email-id"
+        />
+
+        <label for="lname">Mobile Number<sup class="req">*</sup></label>
+        <input
+          type="text"
+          id="number"
+          name="number"
+          placeholder="Your Mobile Number"
+        />
+        <label for="Courses">Courses</label>
+        <select id="country" name="country">
+          <option value="australia">Course 1</option>
+          <option value="canada">Course 2</option>
+          <option value="usa">Course 3</option>
+        </select>
+
+        <label for="subject">Type your message</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something"
+          style="height: 200px"
+        ></textarea>
+
+        <input
+          type="submit"
+          value="Submit"
+          onclick="validateForm();e.preventDefault();"
+        />
+      </form>
+    </div>
+    <div class="footer">
+      <div class="icons">
+        <a href="#" class="social-icons"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icons"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="copy">
+        <p>Copyright @2021, All Rights Reserved.</p>
+      </div>
+    </div>
+    <script src="./js/validate.js"></script>
+  </body>
+</html>
