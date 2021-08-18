@@ -559,3 +559,8 @@ input[type="submit"]:hover {
 .req {
   color: red;
 }
+@media screen and (max-width:700px) {
+  .card-group{
+    margin:auto;
+  }
+}
