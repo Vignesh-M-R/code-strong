@@ -61,6 +61,7 @@ body {
   color: #ffffff;
   border-radius: 5px;
 }
+/* 
 .card-group {
   margin: -6em 0 6em 0;
 }
@@ -102,7 +103,7 @@ body {
 .card .card-title,
 .card-text {
   color: #555555;
-}
+} */
 .heading-p {
   color: rgb(0, 0, 173);
   font-weight: bold;
@@ -159,7 +160,7 @@ section:before {
 
 /*flipper-card*/
 
-.row.no-gutters {
+/* .row.no-gutters {
   margin: -5px !important;
 }
 
@@ -218,7 +219,7 @@ section:before {
 .flipper-card.flipper-is-flipped {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-}
+} */
 
 .card {
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
@@ -226,7 +227,8 @@ section:before {
   border-radius: 20px;
 }
 .card-01 {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
+  background-color: #ffbb00;
 }
 .card-01 .card-body {
   position: relative;
@@ -241,26 +243,34 @@ section:before {
   margin-left: -50px;
   text-align: center;
 }
-.flipper-front .card-01 i {
-  margin: 1.6em auto;
+.card__front .card-01 i,
+.card__back .card-01 i {
+  margin: 10px auto 0 auto;
   background-color: transparent;
   color: #fff;
 }
-.card-body a {
+.card__back .card-01 i {
+  margin: 2em auto 1em auto;
+  font-size: 30px;
+}
+/* .card-body a {
+  margin-top: 1em;
+} */
+/* .card-body a {
   text-decoration: none;
 }
 .card-body a:hover {
   text-decoration: none;
   color: #000;
-}
-.card-body .back,
+} */
+/* .card-body .back,
 .back-a {
   margin: auto;
   background-color: transparent;
   color: #000;
   font-size: 16px;
   text-decoration: none;
-}
+} */
 .card-01 .badge-box i {
   background-color: transparent;
   color: #fff;
@@ -269,7 +279,10 @@ section:before {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
+}
+.card-button {
+  margin-bottom: 1em;
 }
 .card-button:hover {
   background-color: transparent;
@@ -315,8 +328,6 @@ section:before {
   height: 100%;
 }
 
-/* OVER */
-
 .card-flipper {
   position: relative;
   float: left;
@@ -325,21 +336,22 @@ section:before {
   height: 450px;
 }
 
-/* .card__front,
-.flipper-back {
+.card__front,
+.card__back {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-} */
+}
 
-.flipper-back .card {
-  width: 82%;
+
+.card__back  {
+  width: 100%;
   height: 100%;
 }
 
-/* .card__front,
+.card__front,
 .card__back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -347,12 +359,8 @@ section:before {
   transition: 0.3s;
 }
 
-/* .card__front {
-  background-color: #ff5078;
-} */
-/* 
 .card__back {
-  /* background-color: #1e1e1e; 
+  /* background-color: #1e1e1e;  */
   -webkit-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
@@ -380,7 +388,7 @@ section:before {
   -webkit-transform: rotateY(0);
   -ms-transform: rotateY(0);
   transform: rotateY(0);
-} */
+}
 .profile-box-01 {
   display: flex;
   flex-direction: row;
@@ -391,7 +399,7 @@ section:before {
   margin: auto;
 }
 .card-body h4 {
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 .whychooseus-h,
 .testimonials-h {
