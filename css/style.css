@@ -28,10 +28,14 @@ body {
   color: #ffffff;
   height: 90vh;
 }
+.jumbotron .container {
+  margin-top: 3em;
+}
 .container .heading {
   font-weight: bold;
   font-size: 50px;
 }
+
 .lead .button1 {
   background-color: #ffbb00;
   border: 2px solid #ffbb00;
@@ -152,6 +156,70 @@ section:before {
 .btn-default:hover {
   color: #ffffff;
 }
+
+/*flipper-card*/
+
+.row.no-gutters {
+  margin: -5px !important;
+}
+
+.row.no-gutters > * {
+  padding: 5px !important;
+}
+
+.flipper {
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  -webkit-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+}
+
+@media (min-width: 576px) {
+  .ratio-not-1-1 {
+    padding-bottom: calc(50% - 5px);
+  }
+}
+
+.flipper-card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.flipper-front,
+.flipper-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+.flipper-back {
+  background: #fff;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.flipper-card.flipper-is-flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
 .card {
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
   margin-bottom: 30px;
@@ -173,10 +241,25 @@ section:before {
   margin-left: -50px;
   text-align: center;
 }
-.card__front .card-01 i {
+.flipper-front .card-01 i {
   margin: 1.6em auto;
   background-color: transparent;
   color: #fff;
+}
+.card-body a {
+  text-decoration: none;
+}
+.card-body a:hover {
+  text-decoration: none;
+  color: #000;
+}
+.card-body .back,
+.back-a {
+  margin: auto;
+  background-color: transparent;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
 }
 .card-01 .badge-box i {
   background-color: transparent;
@@ -232,7 +315,8 @@ section:before {
   height: 100%;
 }
 
-/*flipper-card*/
+/* OVER */
+
 .card-flipper {
   position: relative;
   float: left;
@@ -241,21 +325,21 @@ section:before {
   height: 450px;
 }
 
-.card__front,
-.card__back {
+/* .card__front,
+.flipper-back {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
-.card__back .card {
+.flipper-back .card {
   width: 82%;
   height: 100%;
 }
 
-.card__front,
+/* .card__front,
 .card__back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -266,9 +350,9 @@ section:before {
 /* .card__front {
   background-color: #ff5078;
 } */
-
+/* 
 .card__back {
-  /* background-color: #1e1e1e; */
+  /* background-color: #1e1e1e; 
   -webkit-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
@@ -296,7 +380,7 @@ section:before {
   -webkit-transform: rotateY(0);
   -ms-transform: rotateY(0);
   transform: rotateY(0);
-}
+} */
 .profile-box-01 {
   display: flex;
   flex-direction: row;
@@ -471,6 +555,16 @@ button.active {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .jumbotron .container {
+    margin-top: 0;
+    margin: auto;
+  }
+  .lead {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 .footer {
   width: 100%;
@@ -559,8 +653,8 @@ input[type="submit"]:hover {
 .req {
   color: red;
 }
-@media screen and (max-width:700px) {
-  .card-group{
-    margin:auto;
+@media screen and (max-width: 700px) {
+  .card-group {
+    margin: auto;
   }
 }
