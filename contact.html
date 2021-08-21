@@ -122,13 +122,33 @@
           name="number"
           placeholder="Your Mobile Number"
         />
-        <label for="Courses">Courses</label>
-        <select id="country" name="country">
-          <option value="australia">Course 1</option>
-          <option value="canada">Course 2</option>
-          <option value="usa">Course 3</option>
+        <label for="Courses">Courses<span style="font-size: 14px;"> (select "others" if your course is not here)</span><sup class="req">*</sup></label>
+        <select id="courses" name="courses">
+          <option value="C++">C++</option>
+          <option value="Python">Python</option>
+          <option value="Web Development">Web Development</option>
+          <option value="others" class="clicker">others</option>
         </select>
-
+        <label for="othercourses" class="text-danger">If the Course you have been looking for is not mentioned above, Please </label>
+        <button
+              class="btn btn-outline-danger"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Click here
+            </button>
+            <input
+        class="collapse" 
+        id="collapseExample"
+            type="text"
+            id="others"
+            name="others"
+            placeholder="Enter Your Courses"
+          />
+            <br><br>
         <label for="subject">Type your message</label>
         <textarea
           id="subject"
@@ -136,12 +156,8 @@
           placeholder="Write something"
           style="height: 200px"
         ></textarea>
-
-        <input
-          type="submit"
-          value="Submit"
-          onclick="validateForm();e.preventDefault();"
-        />
+          <input type="submit" value="Submit" onclick="validateForm();" />
+        </div>
       </form>
     </div>
     <div class="footer">
@@ -155,5 +171,20 @@
       </div>
     </div>
     <script src="./js/validate.js"></script>
+    <!-- <script>
+      $(document).ready(function() {
+
+  
+$('[data-toggle="collapse"]').click(function() {
+  $(this).toggleClass( "active" );
+  if ($(this).hasClass("active")) {
+    $(this).text("Hide");
+  } else {
+    $(this).text("Show");
+  }
+});
+   
+});
+    </script> -->
   </body>
 </html>
