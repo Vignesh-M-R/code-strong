@@ -159,7 +159,9 @@ section:before {
 }
 
 /*flipper-card*/
-
+.row{
+  height: 90vh;
+}
 @media screen and (max-width: 768px) {
   .row {
     height: 180vh;
