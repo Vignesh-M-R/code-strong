@@ -412,9 +412,44 @@ section:before {
   font-weight: 600;
 }
 .whychooseus-h,
-.testimonials-h {
+.testimonials-h,
+.alumni-h {
   font-weight: bold;
   color: #555555;
+}
+.container-fluid {
+  background: #eeeeee;
+}
+.container-fluid .profile-box-01 {
+  margin-left: 500px;
+  margin-right: 500px;
+}
+@media screen and (max-width: 1370px) {
+  .container-fluid .profile-box-01 {
+    margin-left: 300px;
+    margin-right: 300px;
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 910px) {
+  .container-fluid .profile-box-01 {
+    margin-left: 200px;
+    margin-right: 200px;
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 690px) {
+  .container-fluid .profile-box-01 {
+    margin-left: 80px;
+    margin-right: 80px;
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container-fluid .profile-box-01 {
+    margin: auto;
+    transition: 0.3s;
+  }
 }
 .cg-2 {
   margin: 3em auto;
@@ -468,7 +503,7 @@ section:before {
   overflow: hidden;
 }
 .wrapper {
-  width: 700%;
+  width: 200%;
   min-height: 100%;
   display: flex;
   justify-content: space-between;
@@ -691,4 +726,11 @@ input[type="submit"]:hover {
   .card-group {
     margin: auto;
   }
+}
+
+.dd-card {
+  box-shadow: none;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 5px;
 }

@@ -86,51 +86,22 @@
           other students have!
         </p>
         <p class="lead">
-          <button class="btn btn-lg btn-warning button1">READ MORE</button>
-          <button class="btn btn-lg btn-outline-warning button2">
-            CONTACT US
-          </button>
+          <a href="#readmore"
+            ><button class="btn btn-lg btn-warning button1">
+              READ MORE
+            </button></a
+          >
+          <a href="/contact.html"
+            ><button class="btn btn-lg btn-outline-warning button2">
+              CONTACT US
+            </button></a
+          >
         </p>
       </div>
     </div>
-    <!-- CARDS
-    <div class="container">
-      <div class="card-group">
-        <div class="card">
-          <i class="fas fa-language"></i>
-          <div class="card-body">
-            <h4 class="card-title">Art Programs</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              quidem voluptate inventore magnam veniam voluptatum
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <i class="fas fa-language"></i>
-          <div class="card-body">
-            <h4 class="card-title">Art Programs</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              quidem voluptate inventore magnam veniam voluptatum
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <i class="fas fa-language"></i>
-          <div class="card-body">
-            <h4 class="card-title">Art Programs</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              quidem voluptate inventore magnam veniam voluptatum
-            </p>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <!-- CONTENT -->
-    <h2 class="heading-p text-center mt-5 mb-2">
-      Explore Online coding classes for kids of age 6-18
+    <h2 class="heading-p text-center mt-5 mb-2" id="readmore">
+      EXPLORE ONLINE CODING CLASSES FOR KIDS OF AGE 6-18
     </h2>
     <h5 class="text-center content-p">
       Building and programming immersive 3-D application for the VR future is
@@ -425,9 +396,100 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <h4 class="card-title text-light">C++</h4>
+                    <p class="card-text text-light">
+                      C++ is known to be a very powerful language. C++ allows
+                      you to have a lot of control as to how you use computer
+                      resources, its speed and ability to cheaply use resources
+                      should be able to surpass other languages.
+                    </p>
+                    <p class="card-text text-light" style="font-weight: 600">
+                      16 Sessions&nbsp;&nbsp;&nbsp;Age: 13 - 20
+                    </p>
+                    <div class="profile-box-01">
+                      <img
+                        class="card-img-top"
+                        src="/images/c++.png"
+                        alt="Card image cap"
+                      />
+                      <img
+                        class="card-img-top"
+                        src="/images/gfg.png"
+                        alt="Card image cap"
+                      />
+                      <!-- <img
+                        class="card-img-top"
+                        src="/images/AI.png"
+                        alt="Card image cap"
+                      /> -->
+                    </div>
+                    <div class="card-button">
+                      <button class="btn btn-outline-light">
+                        <span
+                          >1-on-1
+                          <i class="fas fa-long-arrow-alt-right"></i>
+                          ₹6000</span
+                        ><!--<span> | </span> Group
+                        <span>₹5166</span> -->
+                      </button>
+                    </div>
+                    <a
+                      href="/contact.html"
+                      class="btn btn-default text-uppercase my-1"
+                      >Book Free Demo</a
+                    >
+          </div>
+          <div class="back">
+            <h4 class="card-title text-light">C++</h4>
 
+                    <ul class="card-text text-light details text-left">
+                      <li>Introduction to C++ Variables & rules, Setup</li>
+                      <li>ASCII Code</li>
+                      <li>Arithmetic& Logical Operator</li>
+                      <li>Loops & Switch</li>
+                      <li>String</li>
+                      <li>Array</li>
+                      <li>Sorting Technique</li>
+                      <li>Stack</li>
+                      <li>Queue</li>
+                      <li>Linklist</li>
+                    </ul>
+                    <p class="card-text text-light" style="font-weight: 600">
+                      Apart from this we will do bunch of question on all
+                      topics.
+                    </p>
+                    <a
+                      href="/contact.html"
+                      class="btn btn-default text-uppercase"
+                      >Book Free Demo</a
+                    >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid pt-3 pb-2">
+        <h2 class="text-center my-3 alumni-h">Brought to you by alumni from</h2>
+        <div class="profile-box-01 my-5">
+          <img
+            class="card-img-top cit1"
+            src="/images/dtu2.png"
+            alt="Card image cap"
+          />
+          <img
+            class="card-img-top cit2"
+            src="/images/amazon4.png"
+            alt="Card image cap"
+          />
+        </div>
+      </div>
+    </section>
     <!-- WHY CHOOSE US -->
-    <h2 class="text-center mt-5 mb-2 whychooseus-h">Why choose Code Strong</h2>
+    <h2 class="text-center mt-5 mb-2 whychooseus-h">Why choose Code Strong?</h2>
     <hr class="stars" id="whyus" />
     <!-- WHYCHOOSEUS CARDS -->
     <div class="container">
@@ -479,7 +541,10 @@
           <i class="fas fa-car-side"></i>
           <div class="card-body cb-2">
             <h4 class="card-title ct-2">Learn through Cartoon and Games</h4>
-            <p class="card-text">There’s something for everyone!</p>
+            <p class="card-text">
+              You’ll get coins for acing quizzes, helping peers, etc... learn
+              while you play!
+            </p>
           </div>
         </div>
         <div class="card c2">
@@ -496,7 +561,7 @@
     </div>
     <!-- TESTIMONIAL -->
     <h6 class="text-uppercase text-center testimonials-h6">
-      what out client says!
+      what our client says!
     </h6>
     <h2 class="text-center mb-2 testimonials-h">Testimonials</h2>
     <hr class="stars" />
@@ -546,127 +611,21 @@
           </div>
         </div>
 
-        <div class="card card-test">
-          <div class="card-thumb">
-            <img src="/images/client 3.jpg" class="client-img" alt="" />
-          </div>
-          <div class="card-body cb-test">
-            <p class="review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores eius debitis, alias omnis incidunt quas facere id atque
-              quam voluptates quibusdam sequi nulla aliquam corrupti!
-            </p>
-            <div class="ratings">
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="far fa-star star-test"></i>
-            </div>
-            <span class="client-name">Client 3</span>
-          </div>
-        </div>
-
-        <div class="card card-test">
-          <div class="card-thumb">
-            <img src="/images/client 1.jpg" class="client-img" alt="" />
-          </div>
-          <div class="card-body cb-test">
-            <p class="review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores eius debitis, alias omnis incidunt quas facere id atque
-              quam voluptates quibusdam sequi nulla aliquam corrupti!
-            </p>
-            <div class="ratings">
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="far fa-star star-test"></i>
-            </div>
-            <span class="client-name">Client 4</span>
-          </div>
-        </div>
-
-        <div class="card card-test">
-          <div class="card-thumb">
-            <img src="/images/client 2.jpg" class="client-img" alt="" />
-          </div>
-          <div class="card-body cb-test">
-            <p class="review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores eius debitis, alias omnis incidunt quas facere id atque
-              quam voluptates quibusdam sequi nulla aliquam corrupti!
-            </p>
-            <div class="ratings">
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="far fa-star star-test"></i>
-            </div>
-            <span class="client-name">Client 5</span>
-          </div>
-        </div>
-
-        <div class="card card-test">
-          <div class="card-thumb">
-            <img src="/images/client 3.jpg" class="client-img" alt="" />
-          </div>
-          <div class="card-body cb-test">
-            <p class="review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores eius debitis, alias omnis incidunt quas facere id atque
-              quam voluptates quibusdam sequi nulla aliquam corrupti!
-            </p>
-            <div class="ratings">
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="far fa-star star-test"></i>
-            </div>
-            <span class="client-name">Client 5</span>
-          </div>
-        </div>
-        <div class="card card-test">
-          <div class="card-thumb">
-            <img src="/images/client 1.jpg" class="client-img" alt="" />
-          </div>
-          <div class="card-body cb-test">
-            <p class="review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores eius debitis, alias omnis incidunt quas facere id atque
-              quam voluptates quibusdam sequi nulla aliquam corrupti!
-            </p>
-            <div class="ratings">
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="fas fa-star star-test"></i>
-              <i class="far fa-star star-test"></i>
-            </div>
-            <span class="client-name">Client 5</span>
-          </div>
+        
         </div>
         <div class="indicators">
           <button class="active"></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
           <button></button>
         </div>
       </div>
     </div>
     <div class="footer">
-      <div class="icons">
+      <div class="icons pt-3">
         <a href="#" class="social-icons"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
         <a href="#" class="social-icons"><i class="fab fa-youtube"></i></a>
       </div>
-      <div class="copy">
+      <div class="copy pt-3">
         <p>Copyright @2021, All Rights Reserved.</p>
       </div>
     </div>
@@ -692,11 +651,6 @@
       //   });
       // });
 
-      $(document).ready(function () {
-        $(".card-flipper").on("click", function () {
-          $(this).find(".flipper-card").toggleClass("flipper-is-flipped");
-        });
-      });
     </script>
   </body>
 </html>
